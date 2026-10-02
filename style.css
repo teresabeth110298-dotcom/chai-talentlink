@@ -18,3 +18,12 @@
 .video-shell{background:#041d3a}.video-shell video{width:100%;height:auto;aspect-ratio:9/16;max-height:none;object-fit:contain;background:#041d3a}
 @media(max-width:850px){.hero-video{width:100%}.video-frame{width:min(88vw,430px)}.hero-video-caption{width:min(88vw,430px);text-align:center}.video-shell{width:min(92vw,430px);margin:auto}.video-shell video{aspect-ratio:9/16}}
 @media(max-width:520px){.video-frame{width:92vw}.video-shell{width:92vw}.video-label{left:12px;bottom:12px}.video-label span{width:28px;height:28px}}
+
+/* Final video presentation: landscape player, full source visible without cropping */
+.video-frame{width:100%;max-width:900px;aspect-ratio:16/9;padding:6px;margin:0 auto;background:#041d3a;border-radius:28px;overflow:hidden}
+.video-frame video{width:100%;height:100%;aspect-ratio:auto;object-fit:contain;display:block;background:#041d3a;border-radius:22px}
+.hero-video{width:100%}.hero-video-caption{width:100%;max-width:900px}
+.video-shell{width:100%;max-width:1000px;aspect-ratio:16/9;padding:6px;margin:auto;border-radius:28px;background:#041d3a;overflow:hidden}
+.video-shell video{width:100%;height:100%;aspect-ratio:auto;object-fit:contain;display:block;background:#041d3a;border-radius:22px}
+@media(max-width:850px){.video-frame{width:100%;max-width:none;aspect-ratio:16/9}.video-shell{width:100%;max-width:none;aspect-ratio:16/9}.hero-video-caption{width:100%}}
+@media(max-width:520px){.video-frame,.video-shell{width:100%;aspect-ratio:16/9;border-radius:18px;padding:4px}.video-frame video,.video-shell video{border-radius:14px}}
