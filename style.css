@@ -56,3 +56,50 @@
 .motion-mini.exact-media img{display:block;width:100%;height:auto;max-width:100%;object-fit:contain;object-position:center;transition:opacity .18s ease}
 .motion-mini.exact-media .motion-progress{position:absolute;left:20px;right:20px;bottom:14px}
 @media(max-width:850px){.motion-mini.exact-media{width:100%;height:auto}.motion-mini.exact-media img{width:100%;height:auto}}
+
+
+/* Mobile-first final polish */
+html,body{width:100%;max-width:100%;overflow-x:hidden}
+img,video{max-width:100%}
+@media(max-width:850px){
+  .container{width:min(94%,680px)}
+  .nav-inner{height:68px}
+  .brand-logo{height:44px;max-width:205px}
+  .nav nav{top:68px;gap:14px;padding:18px 6%;box-shadow:0 12px 25px rgba(16,37,30,.08)}
+  .nav nav a{padding:6px 0}
+  .hero-grid{gap:32px}
+  .hero-copy h1{font-size:clamp(36px,10vw,54px)}
+  .hero-copy .lead{font-size:16px}
+  .actions{flex-direction:column;align-items:stretch}
+  .actions .btn{text-align:center}
+  .trust-row{gap:8px 14px}
+  .hero-video{min-width:0}
+  .video-frame,.video-shell{width:100%;max-width:100%;border-radius:18px}
+  .video-frame video,.video-shell video{width:100%;height:auto;object-fit:contain}
+  .video-label,.video-overlay{display:none}
+  .video-actions{padding:0 4px}
+  .motion-wrap{gap:28px}
+  .motion-mini.exact-media{border-width:4px;border-radius:18px}
+  .motion-mini.exact-media img{width:100%;height:auto}
+  .section{padding:64px 0}
+  .split,.dark .about,.contact-inner{gap:30px}
+}
+@media(max-width:520px){
+  .container{width:92%}
+  .nav-inner{height:64px}
+  .brand-logo{height:40px;max-width:180px}
+  .menu{font-size:22px;padding:4px}
+  .hero-main{padding:42px 0 52px}
+  .eyebrow{font-size:10px;letter-spacing:.14em}
+  .hero-copy h1{font-size:36px;line-height:1.08}
+  .hero-copy .lead{font-size:15px}
+  .registration-badge{font-size:9px}
+  .video-frame,.video-shell{border-radius:14px}
+  .video-frame video,.video-shell video{border-radius:10px}
+  .video-actions .btn{width:100%}
+  .stats-grid{grid-template-columns:1fr 1fr;padding:12px 0}
+  .stats-grid div{padding:10px 12px}
+  .stats-grid strong{font-size:22px}
+  .stats-grid span{font-size:11px}
+  .footer-inner{padding:24px 0;font-size:12px}
+}
